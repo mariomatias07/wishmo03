@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+		<head>
+
+		  	<meta charset="UTF-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="css/wishmo.css">
+			<title>WishMo_LP</title>
+		   	<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Glory:wght@100&display=swap" rel="stylesheet">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Glory:wght@100&family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+    </head>
+
+    <!-- BODY -->
+
+	<body>
+
+		<!-- HEADER -->
+
+		<header class="bar">
+			<div class="container header_part">
+				<div class="logo">
+					 <img src="images/logo.png">
+				</div>
+				<nav class="navbar">
+					<ul class="menu">
+				        <li><a href="#">Ce este WishMo</a></li>
+				        <li><a href="#">De ce WishMo</a></li>
+				        <li><a href="#">Cum functioneaza WishMo</a></li>
+				        <li><a href="#">Campanii</a></li>
+				        <li>
+				         	<a href="#" class="descarca-top">Descarca aplicatia</a>
+				     	</li>
+				    </ul>
+				</nav>
+				<div class="hamburger-1">
+	                <a class="hamburger">
+	                    <img src="images/menu-min.png" alt="menu button">
+	                </a>
+            	</div>
+				
+			</div>
+		</header>
+
+		<!-- HEADER END-->
+
+		<!-- CAMPAIGN -->
+
+		<div class="add_campaign">
+			<div class="info">
+				<h1>
+					Adauga o campanie
+				</h1><br>
+				<p>
+					Până acum, să câștigi nu era treabă<br> ușoară.<br>
+					<strong>Acum ai Wishmo!</strong>
+				</p>
+
+			</div>
+		</div>
+
+		<!-- CAMPAIGN END-->
+
+		<!-- PROGRESS BAR-->
+
+		<div class="progress_1">
+			<a href="#"><img src="images/pbar.png"></a>
+		</div>
+
+		<div class="progress">
+			<div class="firstprogressbar" role="progressbar" style="width: 196px" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+	 		</div>
+	 	</div>
+  
+		<!-- PROGRESS BAR END-->
+
+		<!-- FORMULAR -->
+
+		<div class="formular">
+			<h1>
+				Detalii concurs
+			</h1>
+			<div class="brand">
+			<h1>
+				Brand
+			</h1>
+			<div class="form-floating">
+			  <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+			  <option selected>Alege brand</option>
+			  <option value="1">Zara</option>
+			  <option value="2">Bershka</option>
+			  <option value="3">Nike</option>
+			</select>
+			<div class="campaign">
+				<h1>
+					Nume campanie
+				</h1>
+				 <textarea class="form-control" placeholder="Nume campanie pana in 40 caractere si cu" id="floatingTextarea">Nume campanie pana in 40 caractere si cu
+				 </textarea>
+				 <p>
+				 	<a href="#"><strong>+</strong>
+				 	Adauga Brand
+				 	</a>
+				 </p>
+			</div>
+			</div>
+		</div>
+
+		<!-- BRAND & CAMPAIGN END-->
+
+		<!-- CATEGORIES & AUTO -->
+
+		<div class="categories">
+			<h1>
+				Categorii
+			</h1>
+			<div class="aliments">
+				<img src="images/xphoto.png">
+				<textarea class="form-control" placeholder="Alimente" id="floatingTextarea">Alimente
+			 	</textarea>
+		 	</div>
+		 	<div class="auto">
+		 		<img src="images/xphoto.png">
+		 		<textarea class="form-control" placeholder="Auto" id="floatingTextarea">Auto	
+		 		</textarea>
+		 		 <p>
+				 	<a href="#"><strong>+</strong>
+				 	Adauga Categorie
+				 	</a>
+				 </p>
+		 	</div>
+
+		</div>
+	</div>
+
+		<!-- CATEGORIES & AUTO END -->
+
+		<!-- SQUARE & LANDSCAPE -->
+
+		<div class="photobox">
+				<h1>
+					KV square
+				</h1>
+			<div class="square">
+				<img src="images/sqlp.png">
+				<p>
+					120 x 120px @3x
+				</p>
+			</div>
+			<div class="landscape">
+				<h1>
+					KV landscape
+				</h1>
+				<img src="images/sqlp.png" style="width:34px ;height: 27px;">
+				<p>
+					375 x 282px @3x
+				</p>
+			</div>
+		</div>
+
+		<!-- SQUARE & LANDSCAPE END -->
+
+		<!-- CALENDAR FORM -->
+
+		<div class="calendar_form">
+			<div class="date_start">
+				<h1>
+					Data inceput
+				</h1>
+				<form action="/action_page.php">
+				  <input type="datetime-local" id="birthdaytime" name="time">
+				</form>
+			</div>
+			<div class="date_end">
+				<h1>
+					Data sfarsit
+				</h1>
+				<form action="/action_page.php">
+				  <input type="datetime-local" id="birthdaytime" name="time">
+				</form>
+			</div>
+			<div class="link_rules">
+				<h1>
+					Link regulament
+				</h1>
+				<input type="url" name="url" id="url"
+			       placeholder="https://"
+			       pattern="https://.*" size="30"
+			       required>
+			</div>
+			<div class="short_description">
+				<h1>
+					Descriere scurta
+				</h1>
+				<input type="text" id="name" name="name" required
+      				 minlength="4" maxlength="8" size="10" placeholder="Descriere scurta">
+      				 <label for="words"> Minim 10 cuvinte - Maxim 25 cuvinte
+      				 </label>
+			</div>
+			<div class="long_description">
+				<h1>
+					Descriere lunga
+				</h1>
+				<input type="text" id="name" name="name" required
+      				 minlength="4" maxlength="8" size="10" placeholder="Descriere lunga">
+      				 <label for="words"> Minim 200 cuvinte - Maxim 1000 cuvinte
+      				 </label>
+			</div>
+					<p>
+				 	<a href="#">
+				 	Pasul urmator
+				 	</a>
+				 </p>
+
+		</div>
+
+		<!-- CALENDAR FORM END -->
+
+		<!-- FOOTER -->
+
+		<div class="footer">
+			<footer>
+				<div class="footer_edit">
+				<h1>©2022 WishMo   |   Toate drepturile rezervate</h1>
+				<h2>Termeni si conditii   |   Politica cookies</h2>
+
+				<div class="imagini">
+				<a href="#"><img src="images/facebook.png"></a>
+				<a href="#"><img src="images/twitter.png"></a>
+				<a href="#"><img src="images/insta.png"></a>
+				<a href="#"><img src="images/youtube.png"></a>
+				</div>
+
+				</div>
+			</footer>
+			</div>
+
+			<!--FOOTER END-->
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+		</script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">	
+	    </script>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	    </script>
+	</body>
+</html>
