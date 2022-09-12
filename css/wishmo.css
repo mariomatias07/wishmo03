@@ -5,7 +5,7 @@
 html, body {
   margin: 0;
   background-color: #F6F9FF;
-  height: 100px;
+
   margin-top: -20px;
 }
 
@@ -114,15 +114,24 @@ html, body {
 
     /* PROGRESS BAR */
 
+    .secondcontainer input{
+        display: flex;
+        flex-direction: row;
+        margin-left: 650px;
+    }
+    .secondcontainer label{
+        display: flex;
+        flex-direction: row;
+        margin-left: 650px;
+    }
     .progress_1 {
         max-width: 780px;
         margin: auto;
-        margin-left: 650px !important;
-        margin-top: 75px !important;
+        margin-left: 650px ;
+        margin-top: 75px ;
     }
-
     .progress {
-        margin-top: 10px !important;
+        margin-top: 10px ;
         max-width: 780px;
         margin: auto;
     }
@@ -436,3 +445,178 @@ html, body {
     }
 
     /*FOOTER END*/
+
+@media (min-width: 300px) and (max-width: 700px) {
+ 
+    .bar {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    }
+    .navbar{ 
+        display: none !important;
+    }
+    .navbar.open{
+        display: block;
+        margin-top: 213px;
+        justify-content: center;
+        background-color: blue;
+        position: absolute;
+        width: 385px;
+        margin-left: -20px;
+    }
+    .navbar.open .menu li a{
+        color: white;
+        padding-right: 100px;
+    }
+     .navbar.open .menu li .descarca-top{
+        color: white;
+        background-color: blue;
+        padding: 0;
+        margin: 0;
+        margin-right: 45px;
+    }
+    .navbar.open .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hamburger-1{
+        display: block;
+        margin-left: 80px;
+        height: 20px;
+        color: blue !important;
+    }
+
+    /* HEADER END */
+
+    /* CAMPAIGN */
+
+    .add_campaign {
+        width: 100%;
+        padding-left: 30px;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+    .info h1{
+        margin: 0;
+        padding-top: 120px;
+        font-size: 38px;
+    }
+    .info p {
+        margin: 0;
+        font-size: 24px;
+    }
+    .info p strong {
+        font-size: 30px;
+    }
+    .add_campaign {
+        background-size: 2117px 400px;
+        height: 400px;
+    }
+
+    /* CAMPAIGN END */
+
+    /* PROGRESS BAR*/
+
+    .progress {
+        width: 100%;
+    }
+
+    /* PROGRESS BAR END */
+
+    /* FORMULAR */
+
+    .formular {
+        margin-left: 20px;
+        width: 315px;
+    }
+    .form-select {
+        width: 315px;
+    }
+    .campaign p {
+        width: 315px;
+    }
+
+    /*FORMULAR END*/
+
+    /*CATEGORIES */
+
+    .categories {
+        margin-top: 20px;
+        width: 315px;
+    }
+    .auto p{
+        width: 315px;
+    }
+
+    /* CATEGORIES END */
+
+    /* SQUARE & LANDSCAPE */
+
+    .photobox {
+        display: flex;
+        flex-direction: column;
+    }
+    .photobox h1{
+        margin-left: 30px;
+    }
+    .square {
+        margin: 0 0 20px 30px;
+    }
+    .landscape {
+        margin: 28px 0 0 30px;
+    }
+    .landscape h1{
+        margin-left: 0 !important;
+    }
+
+    /* SQUARE & LANDSCAPE END*/
+
+    /* CALENDAR FORM */
+
+    .calendar_form input{
+        width: 315px;
+        margin-left: 30px;
+    }
+    .calendar_form h1{
+        margin-left: 30px;
+    }
+    .calendar_form label {
+        margin-left: 30px;
+    }
+
+    /* CALENDAR FORM END */
+
+    /* FOOTER */
+
+    .footer {
+        width: 365px;
+        height: 200px;
+    }
+    .footer_edit {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer h1 {
+        margin: 0;
+        margin-top: -50px;
+    }
+    .footer h2{
+        margin: 0;
+        margin-top: 40px;
+    }
+    .imagini {
+        margin-top: 30px;
+    }
+    .imagini img{
+        margin: 7px;
+    }
+    /*FOOTER END*/
+
+}
