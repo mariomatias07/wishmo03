@@ -82,6 +82,7 @@ html, body {
         background-repeat: no-repeat;
         background-size: 2117px 600px;
         height: 450px;
+        margin-bottom: 50px;
     }
     .info {
     	text-align: left;
@@ -114,30 +115,25 @@ html, body {
 
     /* PROGRESS BAR */
 
-    .secondcontainer input{
-        display: flex;
-        flex-direction: row;
-        margin-left: 650px;
-    }
-    .secondcontainer label{
-        display: flex;
-        flex-direction: row;
-        margin-left: 650px;
-    }
-    .progress_1 {
-        max-width: 780px;
+    .wrapper {
+        width: 780px;
         margin: auto;
-        margin-left: 650px ;
-        margin-top: 75px ;
-    }
-    .progress {
-        margin-top: 10px ;
-        max-width: 780px;
-        margin: auto;
-    }
-    .firstprogressbar {
-        background-color: #E93876;
-    }
+        }
+        
+        .progress-bar {
+            width: 100%;
+            background-color: #DFE7F5 !important;
+            padding: 3px;
+            border-radius: 50px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+        }
+        .progress-bar-fill {
+            display: block;
+            height: 22px;
+            background-color: #E93876;
+            border-radius: 50px;
+            transition: width 500ms ease-in-out;
+        }
 
      /* PROGRESS BAR END */
 
@@ -522,8 +518,9 @@ html, body {
 
     /* PROGRESS BAR*/
 
-    .progress {
-        width: 100%;
+    .wrapper {
+        width: 316px;
+        margin-left: 30px;
     }
 
     /* PROGRESS BAR END */
