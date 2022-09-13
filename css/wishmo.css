@@ -5,9 +5,9 @@
 html, body {
   margin: 0;
   background-color: #F6F9FF;
-
   margin-top: -20px;
 }
+
 
     /* HEADER */
 
@@ -388,7 +388,8 @@ html, body {
       }
        .calendar_form p {
         margin: auto;
-        margin-top: 20px !important;
+        margin-top: 80px;
+        margin-bottom: 80px;
         width: 375px;
         height: 50px;
         background-color: #E93876;
