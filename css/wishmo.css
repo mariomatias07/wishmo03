@@ -115,25 +115,25 @@ html, body {
 
     /* PROGRESS BAR */
 
-    .wrapper {
+    
+    .progress {
         width: 780px;
         margin: auto;
-        }
-        
-        .progress-bar {
-            width: 100%;
-            background-color: #DFE7F5 !important;
-            padding: 3px;
-            border-radius: 50px;
-            box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
-        }
-        .progress-bar-fill {
-            display: block;
-            height: 22px;
-            background-color: #E93876;
-            border-radius: 50px;
-            transition: width 500ms ease-in-out;
-        }
+    }    
+    .progress-bar-success {
+        width: 100%;
+        background-color: #DFE7F5 !important;
+        padding: 3px;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+    }
+    .first {
+        background-color: #E93876 !important;
+    }
+    .containerbar img{
+        margin-left: 550px;
+        margin-bottom: 4px;
+    }
+
 
      /* PROGRESS BAR END */
 
@@ -518,10 +518,19 @@ html, body {
 
     /* PROGRESS BAR*/
 
-    .wrapper {
-        width: 316px;
-        margin-left: 30px;
+    .containerbar {
+      margin-left: -20px;
     }
+    .progress {
+        width: 315px;
+    }
+    .progress-bar-success {
+        border-radius: 3px;
+    }
+    .containerbar img{
+        margin: 0 0 5px 66px;
+    }
+    
 
     /* PROGRESS BAR END */
 
