@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
 :root{
     --glory: 'Glory', sans-serif;
     --poppins: 'Poppins', sans-serif;
@@ -279,34 +280,64 @@ html, body {
         display: flex;
         flex-direction: row;
      }
-     .photobox h1 {
-        font-size: 16px;
-        font-family: var(--glory);
-        font-weight: bold;
-        margin-top: -20px;
-        color: black;
-     }
-     .square {
-        margin-left: -65px;
-        height: 175px;
+      .square .center {
         width: 175px;
-        background-color: #FFFFFF;
+        height: 198px;
+        border: 3px solid #DFE7F5;
         border-radius: 11px;
-        border-style: solid;
-        border-color: #DFE7F5;
-     }
-     .square img {
-        margin-left: 65px;
-        margin-top: 50px;
-     }
-     .square p {
-        text-align: center;
-        margin-top: 10px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .square .dropzone p {
+        font-size: 13px;
+    }
+    .square h1 {
         font-size: 16px;
-        font-family: var(--glory);
-        font-weight: bolder;
-     }
-     .landscape {
+        font-weight: 300;
+        color: #666;
+    }
+
+    .square .dropzone {
+        width: 100px;
+        height: 80px;
+        text-align: center;
+    }
+
+    .square .upload-icon {
+        margin: 25px 2px 2px 2px;
+    }
+
+    .square .upload-input {
+        position: relative;
+        top: -62px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+
+    .square .btn {
+        display: block;
+        width: 140px;
+        height: 40px;
+        background: darkmagenta;
+        color: #fff;
+        border-radius: 3px;
+        border: 0;
+        box-shadow: 0 3px 0 0 hotpink;
+        transition: all 0.3s ease-in-out;
+        font-size: 14px;
+    }
+
+    .square .btn:hover {
+        background: rebeccapurple;
+        box-shadow: 0 3px 0 0 deeppink;
+    }
+
+    .landscape {
         margin-left: 220px;
         width: 315px;
         height: 237px;
@@ -315,18 +346,66 @@ html, body {
         border-style: solid;
         border-color: #DFE7F5;
      }
-     .landscape img {
-        margin-left: 130px;
-        margin-top: 90px;
-     }
-     .landscape p {
-        text-align: center;
-        margin-top: 10px;
+    .landscape .center {
+        width: 175px;
+        height: 198px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .landscape .dropzone p {
+        font-size: 13px;
+    }
+    .landscape h1 {
         font-size: 16px;
-        font-family: var(--glory);
-        font-weight: bolder;
-     }
+        font-weight: 300;
+        color: #666;
+    }
 
+    .landscape .dropzone {
+        width: 100px;
+        height: 80px;
+        text-align: center;
+        justify-content: center;
+        margin-left: 130px;
+    }
+
+    .landscape .upload-icon {
+        margin: 25px 2px 2px 2px;
+    }
+
+    .landscape .upload-input {
+        position: relative;
+        top: -62px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+
+    .landscape .btn {
+        display: block;
+        width: 140px;
+        height: 40px;
+        background: darkmagenta;
+        color: #fff;
+        border-radius: 3px;
+        border: 0;
+        box-shadow: 0 3px 0 0 hotpink;
+        transition: all 0.3s ease-in-out;
+        font-size: 14px;
+    }
+
+    .landscape .btn:hover {
+        background: rebeccapurple;
+        box-shadow: 0 3px 0 0 deeppink;
+    }
+    .dropzone p {
+        font-family: var(--glory);
+        font-weight: bold;
+    }
       /* SQUARE & LANDSCAPE END */ 
 
       /* CALENDAR FORM */
