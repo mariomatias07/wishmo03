@@ -142,30 +142,49 @@
 
 		<!-- SQUARE & LANDSCAPE -->
 	<div class="photobox">
+	<div class="square">
+	<div class="file-upload">
+	  <div class="image-upload-wrap">
+	    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+		    <div class="photo-text">
+		    	<img src="images/sqlp.png">
+			      <h1>120 x 120px @3x</h1>
+		    </div>
+	  </div>
+		  <div class="file-upload-content">
+			    <img class="file-upload-image" src="#" alt="your image" />
+		    <div class="image-title-wrap">
+			      <button type="button" onclick="removeUpload()" class="remove-image">Remove 
+			      	<span class="image-title">Uploaded Image
+		      	</span>
+		      </button>
+		    </div>
+		  </div>
+		</div>
+	</div>
 
-        <div class="square">
-        <div class="center">
-                <div class="dropzone">
-                    <img src="images/sqlp.png" class="upload-icon" />
-                    <p>
-                        120 x 120px @3x
-                    </p>
-                    <input type="file" class="upload-input" />
-                </div>
-            </div>
-        </div>
-        <div class="landscape">
-            <div class="center">
-                <div class="dropzone">
-                    <img src="images/sqlp.png" class="upload-icon" />
-                    <p>
-                        375 x 282px @3x
-                    </p>
-                    <input type="file" class="upload-input" />
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="landscape">
+		<div class="file-upload">
+		  <div class="image-upload-wrap">
+		    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+		    <div class="photo-text">
+		    	<img src="images/sqlp.png">
+		      <h1>120 x 120px @3x</h1>
+		    </div>
+		  </div>
+		  <div class="file-upload-content">
+		    	<img class="file-upload-image" src="#" alt="your image" />
+		    <div class="image-title-wrap">
+		      <button type="button" onclick="removeUpload()" class="remove-image">Remove
+		       <span class="image-title">Uploaded Image
+		       </span>
+		   		</button>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+
 
 		<!-- SQUARE & LANDSCAPE END -->
 
@@ -254,5 +273,6 @@
 		 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
 		 </script>
 		 <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		 <script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>

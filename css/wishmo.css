@@ -280,8 +280,17 @@ html, body {
         display: flex;
         flex-direction: row;
      }
-      .square .center {
-        width: 175px;
+     .square h1 {
+        font-size: 16px;
+        font-weight: 300;
+        color: #666;
+        padding-top: 10px;
+    }
+    .square .file-upload img {
+        margin-left: 35px;
+    }
+    .square .file-upload {
+       width: 175px;
         height: 198px;
         border: 3px solid #DFE7F5;
         border-radius: 11px;
@@ -291,120 +300,203 @@ html, body {
         justify-content: space-evenly;
         flex-direction: column;
     }
-    .square .dropzone p {
-        font-size: 13px;
+
+    .square .file-upload-btn {
+      width: 100%;
+      margin: 0;
+      color: #fff;
+      background: #1FB264;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      border-bottom: 4px solid #15824B;
+      transition: all .2s ease;
+      outline: none;
+      text-transform: uppercase;
+      font-weight: 700;
     }
-    .square h1 {
+
+    .square .file-upload-btn:hover {
+      background: #1AA059;
+      color: #ffffff;
+      transition: all .2s ease;
+      cursor: pointer;
+    }
+
+    .square .file-upload-btn:active {
+      border: 0;
+      transition: all .2s ease;
+    }
+
+    .square .file-upload-content {
+      display: none;
+      text-align: center;
+    }
+
+    .square .file-upload-input {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      outline: none;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .square .image-upload-wrap {
+      position: relative;
+    }
+
+    .square .image-title-wrap {
+      padding: 0 15px 15px 15px;
+      color: #222;
+    }
+
+    .square .drag-text {
+      text-align: center;
+    }
+    .square .file-upload-image {
+      max-height: 200px;
+      max-width: 200px;
+      margin: auto;
+      padding: 20px;
+    }
+    .square .remove-image {
+      width: 170px;
+      margin: 0;
+      color: #fff;
+      background: #cd4535;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      border-bottom: 4px solid #b02818;
+      transition: all .2s ease;
+      outline: none;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .square .remove-image:hover {
+      background: #c13b2a;
+      color: #ffffff;
+      transition: all .2s ease;
+      cursor: pointer;
+    }
+
+    .square .remove-image:active {
+      border: 0;
+      transition: all .2s ease;
+    }
+
+    .landscape h1 {
         font-size: 16px;
         font-weight: 300;
         color: #666;
+        padding-top: 10px;
     }
-
-    .square .dropzone {
-        width: 100px;
-        height: 80px;
-        text-align: center;
+    .landscape .file-upload img {
+        margin-left: 35px;
     }
-
-    .square .upload-icon {
-        margin: 25px 2px 2px 2px;
-    }
-
-    .square .upload-input {
-        position: relative;
-        top: -62px;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-    }
-
-    .square .btn {
-        display: block;
-        width: 140px;
-        height: 40px;
-        background: darkmagenta;
-        color: #fff;
-        border-radius: 3px;
-        border: 0;
-        box-shadow: 0 3px 0 0 hotpink;
-        transition: all 0.3s ease-in-out;
-        font-size: 14px;
-    }
-
-    .square .btn:hover {
-        background: rebeccapurple;
-        box-shadow: 0 3px 0 0 deeppink;
-    }
-
-    .landscape {
-        margin-left: 220px;
+    .landscape .file-upload {
         width: 315px;
         height: 237px;
-        background-color: #FFFFFF;
+        margin-left: 220px;
+        border: 3px solid #DFE7F5;
         border-radius: 11px;
-        border-style: solid;
-        border-color: #DFE7F5;
-     }
-    .landscape .center {
-        width: 175px;
-        height: 198px;
         background: #fff;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         flex-direction: column;
     }
-    .landscape .dropzone p {
-        font-size: 13px;
-    }
-    .landscape h1 {
-        font-size: 16px;
-        font-weight: 300;
-        color: #666;
+
+    .landscape .file-upload-btn {
+      width: 100%;
+      margin: 0;
+      color: #fff;
+      background: #1FB264;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      border-bottom: 4px solid #15824B;
+      transition: all .2s ease;
+      outline: none;
+      text-transform: uppercase;
+      font-weight: 700;
     }
 
-    .landscape .dropzone {
-        width: 100px;
-        height: 80px;
-        text-align: center;
-        justify-content: center;
-        margin-left: 130px;
+    .landscape .file-upload-btn:hover {
+      background: #1AA059;
+      color: #ffffff;
+      transition: all .2s ease;
+      cursor: pointer;
     }
 
-    .landscape .upload-icon {
-        margin: 25px 2px 2px 2px;
+    .landscape .file-upload-btn:active {
+      border: 0;
+      transition: all .2s ease;
     }
 
-    .landscape .upload-input {
-        position: relative;
-        top: -62px;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
+    .landscape .file-upload-content {
+      display: none;
+      text-align: center;
     }
 
-    .landscape .btn {
-        display: block;
-        width: 140px;
-        height: 40px;
-        background: darkmagenta;
-        color: #fff;
-        border-radius: 3px;
-        border: 0;
-        box-shadow: 0 3px 0 0 hotpink;
-        transition: all 0.3s ease-in-out;
-        font-size: 14px;
+    .landscape .file-upload-input {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      outline: none;
+      opacity: 0;
+      cursor: pointer;
     }
 
-    .landscape .btn:hover {
-        background: rebeccapurple;
-        box-shadow: 0 3px 0 0 deeppink;
+    .landscape .image-upload-wrap {
+      position: relative;
     }
-    .dropzone p {
-        font-family: var(--glory);
-        font-weight: bold;
+
+    .landscape .image-title-wrap {
+      padding: 0 15px 15px 15px;
+      color: #222;
+    }
+
+    .landscape .drag-text {
+      text-align: center;
+    }
+    .landscape .file-upload-image {
+      max-height: 200px;
+      max-width: 200px;
+      margin: auto;
+      padding: 20px;
+    }
+    .landscape .remove-image {
+      width: 200px;
+      margin: 0;
+      color: #fff;
+      background: #cd4535;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      border-bottom: 4px solid #b02818;
+      transition: all .2s ease;
+      outline: none;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .landscape .remove-image:hover {
+      background: #c13b2a;
+      color: #ffffff;
+      transition: all .2s ease;
+      cursor: pointer;
+    }
+
+    .landscape .remove-image:active {
+      border: 0;
+      transition: all .2s ease;
     }
       /* SQUARE & LANDSCAPE END */ 
 
